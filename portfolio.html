@@ -17,7 +17,10 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>WebStudio</title>
@@ -25,10 +28,10 @@
   </head>
   <body>
     <header class="navbar">
-      <a href="#">
-        <p class="page-name">WebStudio</p>
-      </a>
       <nav>
+        <a href="#">
+          <p class="page-name">WebStudio</p>
+        </a>
         <ul class="navbar-list">
           <li>
             <a id="estudio" href="index.html" class="nav-link">Estudio</a>
@@ -44,25 +47,27 @@
         </ul>
       </nav>
       <ul class="navbar-contact-info">
-        <li><figure class="navbar-info">
-          <img src="images/sobre.svg" class="navbar-icon" alt="Imagen contacto" />
-          <a href="mailto:info@devstudio.com" target="_blank" class="nav-link"
-            >info@devstudio.com</a
-          >
-        </figure></li>
-        <li><figure class="navbar-info">
-          <img
-            src="images/mobile.svg"
-            class="navbar-icon"
-            alt="Imagen Contacto"
-          />
-          <a href="tel:+525555296000" target="_blank" class="nav-link"
-            >+52 55 5529 6000</a
-          >
-        </figure></li>
+        <li>
+          <figure class="navbar-info">
+            <svg class="navbar-icon">
+              <use href="images/icons.svg#icon-sobre"></use>
+            </svg>
+            <a href="mailto:info@devstudio.com" target="_blank" class="nav-link"
+              >info@devstudio.com</a
+            >
+          </figure>
+        </li>
+        <li>
+          <figure class="navbar-info">
+            <svg class="navbar-icon">
+              <use href="images/icons.svg#icon-mobile"></use>
+            </svg>
+            <a href="tel:+525555296000" target="_blank" class="nav-link"
+              >+52 55 5529 6000</a
+            >
+          </figure>
+        </li>
       </ul>
-      
-      
     </header>
     <main>
       <article class="portafolio-content">
@@ -169,7 +174,9 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="./images/instagram-icon.svg" alt="Red social" />
+              <svg>
+                <use href="/images/icons.svg#icon-instagram"></use>
+              </svg>
             </a>
           </li>
 
@@ -180,7 +187,9 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="./images/twitter-icon.svg" alt="Red social" />
+              <svg>
+                <use href="/images/icons.svg#icon-twitter"></use>
+              </svg>
             </a>
           </li>
 
@@ -191,7 +200,9 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="./images/facebook-icon.svg" alt="Red social" />
+              <svg>
+                <use href="/images/icons.svg#icon-facebook"></use>
+              </svg>
             </a>
           </li>
 
@@ -202,7 +213,9 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="./images/linkedin-icon.svg" alt="Red social" />
+              <svg>
+                <use href="/images/icons.svg#icon-linkedin"></use>
+              </svg>
             </a>
           </li>
         </ul>
