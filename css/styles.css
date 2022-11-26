@@ -28,9 +28,7 @@
   display: flex;
   height: 16px;
   width: 16px;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
+  fill: var(--light-gray);
 }
 
 .icon-clock {
@@ -40,12 +38,19 @@
 .icon-details {
   width: 0.9423828125em;
 }
+.client{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .icon-clients{
-  height: 80px;
-  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--light-gray);
 }
 .client-container:hover,
-.client-container:hover svg path{
+.client-container:hover svg {
   fill: var(--main-color);
   border-color: var(--main-color);
   cursor: pointer;
@@ -196,6 +201,7 @@ nav a:hover {
   margin: 45px 0px 150px 0px;
   width: 170px;
 }
+
 .client-image {
   color: aqua;
 }
@@ -334,6 +340,7 @@ nav a:hover {
   border-radius: 4px;
   display: flex;
   justify-content: center;
+  text-align: center;
   align-items: center;
   margin-bottom: 30px;
 }
@@ -366,37 +373,37 @@ nav a:hover {
   gap: 10px;
 }
 .navbar-info:hover a,
-.navbar-info:hover  #icon-sobre{
+.navbar-info:hover  .navbar-icon{
   color: var(--main-color);
   fill: var(--main-color);
 }
 
 .main-content-icon{
+  width: 70px;
   height: 70px;
 }
 .main-content-icon:hover{
  fill: var(--main-color);
 }
 .team-card-icon{
+  fill: var(--light-gray);
   height: 20px;
   width: 20px;
 }
-.media-icon {
- color: aquamarine;
- fill: blueviolet;
- background-color: violet;
-}
+
+
 .team-social-media-button{
+  align-items: center;
   background-color: var(--white);
   border-radius: 100%;
   display: flex;
   height: 40px;
   justify-content: center;
-  align-items: center;
   width: 40px;
 }
-.team-social-media-button:hover{
+.team-social-media-button:hover,.team-social-media-button:hover  svg{
   background-color: var(--main-color);
+  fill: var(--white);
 }
 .team-social-sites{
   display: flex;
@@ -406,6 +413,9 @@ nav a:hover {
   justify-content: center;
 }
 
+.social-media-icon{
+  fill: var(--white);
+}
 .navbar-info a {
   color: var(--light-gray);
   font-size: 14px;
